@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuer Release Notes</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #6750a4;
+    --border: #e2e0e6;
+    --card-bg: #f8f7fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131218;
+      --fg: #e8e6ee;
+      --muted: #a8a5b0;
+      --accent: #c7b8ff;
+      --border: #2c2a33;
+      --card-bg: #1c1b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  a { color: var(--accent); }
+  .back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--muted);
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 2rem;
+  }
+  .entry {
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .entry h2 {
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+  }
+  .entry p {
+    margin: 0.4rem 0;
+    color: var(--fg);
+  }
+  .entry .date {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: normal;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../">&larr; Cuer</a>
+  <h1>Release Notes</h1>
+
+  <div class="entry">
+    <h2>First Microsoft Store release <span class="date">2026</span></h2>
+    <p>Cuer is now available on the Microsoft Store. Release notes for individual versions will be posted here going forward.</p>
+  </div>
+
+  <footer>Cuer &middot; Mike McNees</footer>
+</main>
+</body>
+</html>
