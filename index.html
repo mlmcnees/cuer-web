@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuer</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5b5b63;
+    --accent: #6750a4;
+    --border: #e2e0e6;
+    --card-bg: #f8f7fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131218;
+      --fg: #e8e6ee;
+      --muted: #a8a5b0;
+      --accent: #c7b8ff;
+      --border: #2c2a33;
+      --card-bg: #1c1b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem;
+  }
+  p.lead {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-top: 0;
+  }
+  .links {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .links a {
+    display: block;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .links a:hover {
+    border-color: var(--accent);
+  }
+  .links a span {
+    display: block;
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.15rem;
+  }
+  footer {
+    margin-top: 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="badge">Round Dance Music &amp; Choreography</div>
+  <h1>Cuer</h1>
+  <p class="lead">A Windows desktop app for managing round dance music and choreography.</p>
+
+  <div class="links">
+    <a href="./privacy/">
+      Privacy Policy
+      <span>What Cuer does and doesn't do with your data</span>
+    </a>
+  </div>
+
+  <footer>Cuer &middot; Mike McNees</footer>
+</main>
+</body>
+</html>
