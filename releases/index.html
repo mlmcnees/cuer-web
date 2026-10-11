@@ -64,6 +64,21 @@
     margin: 0.4rem 0;
     color: var(--fg);
   }
+  .entry h3 {
+    font-size: 0.95rem;
+    margin: 1rem 0 0.25rem;
+  }
+  .entry ul {
+    margin: 0.25rem 0;
+    padding-left: 1.25rem;
+  }
+  .entry li {
+    margin: 0.25rem 0;
+  }
+  .entry .note {
+    border-left: 3px solid var(--accent);
+    padding-left: 0.75rem;
+  }
   .entry .date {
     color: var(--muted);
     font-size: 0.85rem;
@@ -82,6 +97,43 @@
 <main>
   <a class="back" href="../">&larr; Cuer</a>
   <h1>Release Notes</h1>
+
+  <div class="entry">
+    <h2>Version 1.2.16.0 <span class="date">October 2026</span></h2>
+
+    <p class="note"><strong>Imported from DanceMaster before this version?</strong> Please import again so every dance plays at the right speed. Re-importing replaces your Cuer database (the old one is backed up), so changes you made in Cuer since your first import will need redoing.</p>
+
+    <h3>DanceMaster import</h3>
+    <ul>
+      <li>Fixed a crash partway through importing a DanceMaster library.</li>
+      <li>Dances now import DanceMaster&rsquo;s playback speed adjustment. Previously the speed was calculated from the turntable speed field: when that field was blank the dance loaded but never played, and other dances played at the wrong speed (33&nbsp;RPM records about 27% slow).</li>
+      <li>Updating automatically fixes dances that wouldn&rsquo;t play.</li>
+    </ul>
+
+    <h3>Music and cue cards</h3>
+    <ul>
+      <li>Music and cue card files are matched regardless of upper/lower case.</li>
+      <li>.wav, .wma and .m4a music files are now recognized, as well as .mp3.</li>
+      <li>When a dance&rsquo;s music or cue card file can&rsquo;t be found, Cuer records it in the session log, which makes problem reports easier to diagnose.</li>
+    </ul>
+
+    <h3>Editing dances</h3>
+    <ul>
+      <li>Opening a dance in the editor and closing it without changing anything no longer asks whether to save.</li>
+    </ul>
+
+    <h3>Help</h3>
+    <ul>
+      <li>The numbered markers in every page tour now line up with what they describe, and the pictures are larger.</li>
+      <li>The Edit Dance Detail and Times tours have real screenshots, and the tour text matches the current pages.</li>
+    </ul>
+
+    <h3>Other</h3>
+    <ul>
+      <li>The About page and title bar show the actual installed version.</li>
+      <li>Improved stability: background tasks no longer crash the app when the database is briefly busy.</li>
+    </ul>
+  </div>
 
   <div class="entry">
     <h2>First Microsoft Store release <span class="date">2026</span></h2>
